@@ -10,14 +10,10 @@ array=zeros(8760,1);
 % Selects the data associated with the user-selected collector; see the
 % help of collector_data for more information. 
 col=collector_data(1); 
-% disp(col.Collector_Model)
-
-% Number of solar collector assemblies in a single loop is the variable 
 
 % Selects the data associated with the user-selected receiver; see the
 % help of receiver_data for more information. 
 HCE=receiver_data(5); 
-% disp(HCE.Receiver_Model)
 
 % Adjusts the loop configuration to match the user nSCA input. 
 trough_loop_control=loop_configuration(nSCA); 
