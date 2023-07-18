@@ -1,4 +1,4 @@
-function [LCOH]=nSCA_fun(x, varargin)
+function LCOH=nSCA_fun(x)
 
 % Unpack the array of simulation parameters to be optimized
 nSCA = x(1);  
