@@ -40,5 +40,5 @@ optim_options = optimoptions("ga","Display","iter");
 %ga(fffff, 3)
 
 
-[x, lcoh_optim] = ga(@(x) parfeval_function([x(1),x(2)], x(3)),2,A,b,Aeq,beq,lb,ub,nonlcon, ...
+[x, lcoh_optim] = ga(@(x) parfeval_function([x(1),x(2)]),2,A,b,Aeq,beq,lb,ub,nonlcon, ...
     intcon,optim_options);
