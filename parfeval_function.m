@@ -1,8 +1,7 @@
-function LCOH = parfeval_function(x, varargin) 
+function LCOH = parfeval_function(x) 
 % This code sets a limit to the time it takes while calling nSCA_fun. 
 maxTime= 60; % [seconds]
-    nSCA_fun(x, varargin)
-    g = parfeval( @nSCA_fun, 1, x, varargin);
+    g = parfeval( @nSCA_fun, 1, x);
     didFinish = wait(g, 'finished', maxTime);
 % If the function did not finish, the LCOH is set to a large number
     if ~didFinish
