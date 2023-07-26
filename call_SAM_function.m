@@ -26,20 +26,9 @@ trough_loop_control=loop_configuration(nSCA);
 % Selecting a location of the concentrated solar plant; % This location 
 % selection code is temporary; we will find a way to implement locations 
 % across the continental United States, and the location selection will be 
-% its own MATLAB function. But for now, we have this: 
-location = 2; 
-if location == 1
-    y= 'S:/COE/STEP/00 SUMMER RESEARCH/2023 Summer 2023/Ramos/SAM MATLAB/2022.11.21/solar_resource/tucson_az_32.116521_-110.933042_psmv3_60_tmy.csv';
-    disp("Tucson, Arizona");
-elseif location == 2
-    y= 'S:/COE/STEP/00 SUMMER RESEARCH/2023 Summer 2023/Ramos/SAM MATLAB/2022.11.21/solar_resource/daggett_ca_34.865371_-116.783023_psmv3_60_tmy.csv';
-elseif location == 3
-    y= 'S:/COE/STEP/00 SUMMER RESEARCH/2023 Summer 2023/Ramos/SAM MATLAB/2022.11.21/solar_resource/fargo_nd_46.9_-96.8_mts1_60_tmy.csv';
-    disp("Fargo, North Dakota");
-elseif location == 4
-    y= 'S:/COE/STEP/00 SUMMER RESEARCH/2023 Summer 2023/Ramos/SAM MATLAB/2022.11.21/solar_resource/valparaiso_in_915193_41.49_-87.06_tmy-2021.csv'; 
-    disp("Valparaiso, Indiana"); 
-end
+% its own MATLAB function. But for now, we select a weather file. 
+
+y= 'daggett_ca_34.865371_-116.783023_psmv3_60_tmy.csv';
 
 non_solar_land_area_multiplier=1.10; % the land area multiplier
 
