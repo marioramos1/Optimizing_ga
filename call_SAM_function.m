@@ -3,8 +3,8 @@ try
 % Unpack the array of simulation parameters to be optimized
 specified_solar_multiple = x(1); % the solar multiple of the field
 q_pb_design = x(2); %the designed thermal heat to sink 
-nSCA = x(3); % the number of collector assemblies per loop
-tshours = x(4); % the equivalent hours of thermal energy storage at design
+nSCA = 6; % the number of collector assemblies per loop
+tshours = x(3); % the equivalent hours of thermal energy storage at design
 T_in_loop_des = 200; 
 T_out_loop = 375; 
 
